@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "45657690683",
+    "project_id": "primeiro-projeto-eaph",
+    "storage_bucket": "primeiro-projeto-eaph.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45657690683:android:eefda67c1bfda8e9d0c21e",
+        "android_client_info": {
+          "package_name": "com.seuapp.teste"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApLyGXFXOZZZfuHDriThrsZykf8PcjUV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
