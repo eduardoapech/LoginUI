@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey[300],
       appBar: AppBar(
-        backgroundColor: Colors.grey[900],
+        backgroundColor: const Color.fromARGB(255, 190, 180, 180),
         actions: [
           IconButton(
             onPressed: signUserOut,
@@ -25,9 +25,18 @@ class HomePage extends StatelessWidget {
         ],
       ),
       body: Center(
-          child: Text(
-        "LOGGED IN AS: " + user.email!,
-        style: TextStyle(fontSize: 20),
+          child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text('signed in ' + user.email!),
+          MaterialButton(
+            onPressed: () {
+              FirebaseAuth.instance.signOut();
+            },
+            color: Colors.purple,
+            child: Text('Sign out'),
+          )
+        ],
       )),
     );
   }
